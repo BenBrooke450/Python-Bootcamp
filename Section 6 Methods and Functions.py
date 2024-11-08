@@ -313,9 +313,49 @@ check_guess(mixedup_list,guess)
 #Wrong guess! ['o', ' ', ' ']
 
 
+####################################################################
+#               *args and **Kwargs
+####################################################################
+
+def myfunc(a,b):
+    return  sum((a,b)) * 0.05
+
+print(myfunc(5,5))
+#0.5
 
 
+def myfunc(*args):
+    return args
 
+print(myfunc(50,50))
+#(50, 50)
+
+
+def myfunc(*ben):
+    return ben
+
+print(myfunc(50,50))
+#(50, 50)
+
+
+def myfunc(*ben):
+    for nums in ben:
+        print(nums)
+
+myfunc(50,50,30,20,10)
+
+#50
+#50
+#30
+#20
+#10
+
+
+def myfunc(**kwargs):
+    if 'fruit' in kwargs:
+        print(f"My fruit of choice is {kwargs}")
+
+myfunc(fruit = "apple")
 
 
 
