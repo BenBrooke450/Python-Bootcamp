@@ -1,6 +1,7 @@
 from anaconda_project.internal.conda_api import result
 from conda_build.metadata import TRUES
 from sympy import false
+from zmq import EVENTS
 
 mylist = [1,2,3]
 print(mylist)
@@ -356,6 +357,86 @@ def myfunc(**kwargs):
         print(f"My fruit of choice is {kwargs}")
 
 myfunc(fruit = "apple")
+
+
+####################################################################
+#            Lambda Expressions, Map, and Filter Functions
+####################################################################
+
+def square(num):
+    return num**2
+
+mynums = [1,2,3,4,5]
+
+print(map(square,mynums))
+#<map object at 0x101809750>
+
+print(list(map(square,mynums)))
+#[1, 4, 9, 16, 25]
+
+for nums in map(square,mynums):
+    print(nums)
+1
+4
+9
+16
+25
+
+
+
+
+def splicer(mystring):
+    if len(mystring)%2 == 0:
+        return "EVEN"
+    else:
+        return "ODD"
+
+names = ["Ben","Ana","Jack","Tayl"]
+
+print(list(map(splicer,names)))
+#['ODD', 'ODD', 'EVEN', 'EVEN']
+
+
+
+
+
+### LAMBDA
+
+def square(num):
+    result = num ** 2
+    return result
+
+print(square(3))
+9
+
+
+def square(num): return num ** 2
+
+#SAME
+
+lambda num: num ** 2
+
+
+
+num = [1,2,3,4,5,6]
+
+print(list(map(lambda num:  num ** 2,mynums)))
+#[1, 4, 9, 16, 25]
+
+
+####################################################################
+#                Nested Statements and Scope
+####################################################################
+
+
+
+
+
+
+
+
+
+
 
 
 
