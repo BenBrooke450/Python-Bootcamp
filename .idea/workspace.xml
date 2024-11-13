@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5efb23d-c87d-44bb-a36c-dc5fa4d569da" name="Changes" comment="Basic">
-      <change afterPath="$PROJECT_DIR$/Section 8: Object Oriented Programming.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Section 10 Errors and Exceptions Handling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Section 9 Modules and Packages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,43 +47,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Section 10 Errors and Exceptions Handling.executor": "Run",
     "Python.Section 5 Python Statements.executor": "Run",
     "Python.Section 6 Methods and Functions.executor": "Run",
     "Python.Section 7 Milestone Project - 1.executor": "Run",
+    "Python.Section 8 Object Oriented Programming.executor": "Run",
     "Python.Section 8: Object Oriented Programming.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Section 8: Object Oriented Programming" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python Bookcamp" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Section 8: Object Oriented Programming.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.Section 8: Object Oriented Programming" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -139,7 +113,31 @@
       <option name="project" value="LOCAL" />
       <updated>1731353357882</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Basic">
+      <option name="closed" value="true" />
+      <created>1731441134193</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731441134193</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Basic">
+      <option name="closed" value="true" />
+      <created>1731441140957</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731441140957</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Basic">
+      <option name="closed" value="true" />
+      <created>1731441274164</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731441274164</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
