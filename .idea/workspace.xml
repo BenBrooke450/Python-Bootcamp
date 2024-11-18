@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5efb23d-c87d-44bb-a36c-dc5fa4d569da" name="Changes" comment="Basic">
+      <change afterPath="$PROJECT_DIR$/Section 14 Advanced Python Modules.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +50,7 @@
     "Python.Section 11 Milestone 2 Warmup Project.executor": "Run",
     "Python.Section 12 Python Decorators.executor": "Run",
     "Python.Section 13 Python Generators.executor": "Run",
+    "Python.Section 14 Advanced Python Modules.executor": "Run",
     "Python.Section 5 Python Statements.executor": "Run",
     "Python.Section 6 Methods and Functions.executor": "Run",
     "Python.Section 7 Milestone Project - 1.executor": "Run",
@@ -178,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731887861342</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Basic">
+      <option name="closed" value="true" />
+      <created>1731888630496</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1731888630496</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
