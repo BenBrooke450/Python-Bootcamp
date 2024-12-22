@@ -6,8 +6,6 @@
 
 from collections import Counter
 
-from dask.array.random import choice
-
 mylist = [1,1,1,1,2,2,3,3,4,5,5,6]
 
 print(Counter(mylist))
@@ -163,6 +161,147 @@ print(mylist)
 ####################################################################
 #                       Python Regular Expressions
 ####################################################################
+
+
+text = "The agent's phone number is 408-555-1234"
+
+print("phone" in text)
+#True
+
+
+import re
+
+pattern  = "phone"
+
+print(re.search(pattern,text))
+#<re.Match object; span=(12, 17), match='phone'>
+
+
+print(text[12:17])
+#phone
+
+
+
+
+
+
+
+
+text = "The agent's phone number is 408-555-1234, phone is long"
+
+matches = re.search("phone",text)
+
+
+print(matches)
+#<re.Match object; span=(12, 17), match='phone'>
+
+
+print(re.findall("phone",text))
+#['phone', 'phone']
+
+
+
+for match in re.finditer("phone",text):
+    print(match)
+
+"""
+<re.Match object; span=(12, 17), match='phone'>
+<re.Match object; span=(42, 47), match='phone'>
+"""
+
+
+
+for match in re.finditer("phone",text):
+    print(match.span())
+"""
+(12, 17)
+(42, 47)
+"""
+
+
+
+
+
+
+
+
+
+
+
+text  = "My number is 408-555-1234"
+
+phone = re.search(r"\d\d\d-\d\d\d-\d\d\d\d",text)
+
+print(phone)
+#<re.Match object; span=(13, 25), match='408-555-1234'>
+
+
+
+
+
+phone = re.search(r"\d{3}-\d{3}-\d{4}",text)
+
+print(phone)
+#<re.Match object; span=(13, 25), match='408-555-1234'>
+
+
+
+
+phone_pattern  = re.compile(r"(\d{3})-(\d{3})-(\d{4})")
+
+results = re.search(phone_pattern,text)
+
+print(results)
+#<re.Match object; span=(13, 25), match='408-555-1234'>
+
+print(results.group())
+#408-555-1234
+
+
+print(results.group(1))
+#408
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print(re.search(r"cat","The cat is here"))
+#<re.Match object; span=(4, 7), match='cat'>
+
+print(re.findall(r"...at","The cat in the hat went splat"))
+#['e cat', 'e hat', 'splat']
+
+
+print(re.findall(r"\d","The cat 2 in the hat went splat"))
+#['2']
+
+
+
+text  = "This string is here! but it has punctuation?, How can we."
+
+print(re.findall(r'[^!?.]',text))
+#['T', 'h', 'i', 's', ' ', 's', 't', 'r', 'i', 'n', 'g', ' ', 'i', 's', ' ', 'h', 'e', 'r', 'e', ' ', 'b', 'u', 't', ' ', 'i', 't', ' ', 'h', 'a', 's', ' ', 'p', 'u', 'n', 'c', 't', 'u', 'a', 't', 'i', 'o', 'n', ',', ' ', 'H', 'o', 'w', ' ', 'c', 'a', 'n', ' ', 'w', 'e']
+
+print(re.findall(r'[^!?.]+',text))
+#['This string is here', ' but it has punctuation', ', How can we']
+
+print(re.findall(r'[^!?. ]+',text))
+#['This', 'string', 'is', 'here', 'but', 'it', 'has', 'punctuation', ',', 'How', 'can', 'we']
+
+
+
+
+
 
 
 
